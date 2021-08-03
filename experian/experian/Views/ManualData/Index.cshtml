@@ -1,0 +1,157 @@
+﻿
+<h1 style="text-align:center">Manually enter data</h1>
+<br>
+<form asp-controller="ManualData" asp-action="Index" method="post" enctype="multipart/form-data">
+
+    @*<div class="row">
+            <div class="col">
+                <input type="text" name="Account_Number" id="Account_Number" class="form-control" placeholder="Account_Number">
+            </div>
+            <div class="col">
+                <input type="text" name="Account_Type" id="Account_Type" class="form-control" placeholder="Account_Type">
+            </div>
+            <div class="col">
+                <input type="text" name="Final_Decision" id="Final_Decision" class="form-control" placeholder="Final_Decision">
+            </div>
+        </div>*@
+    @*<div class="row">
+            <div class="col">
+                <input type="text" name="Current_Delinquency_status" id="Current_Delinquency_status" class="form-control" placeholder="Current_Delinquency_status">
+            </div>
+            <div class="col">
+                <input type="text" name="Application_Date" id="Application_Date" class="form-control" placeholder="Application_Date">
+            </div>
+            <div class="col">
+                <input type="text" name="Application_Score" id="Application_Score" class="form-control" placeholder="Application_Score">
+            </div>
+        </div>*@
+    <!--<div class="row">-->
+    @*<div class="col">
+            <input type="text" name="Cheque_Card_Flag" id="Cheque_Card_Flag" class="form-control" placeholder="Cheque_Card_Flag">
+        </div>*@
+
+    @* <div class="col">
+            <input type="text" name="Gross_Annual_Income" id="Gross_Annual_Income" class="form-control" placeholder="Gross_Annual_Income">
+        </div>*@
+    <!--</div>-->
+    @* <div class="row">
+            <div class="col">
+                <input type="text" name="Home_Telephone_Number" id="Home_Telephone_Number" class="form-control" placeholder="Home_Telephone_Number">
+            </div>
+            <div class="col">
+                <input type="text" name="Insurance_Required" id="Insurance_Required" class="form-control" placeholder="Insurance_Required">
+            </div>
+            <div class="col">
+                <input type="text" name="Loan_Amount" id="Loan_Amount" class="form-control" placeholder="Loan_Amount">
+            </div>
+        </div>*@
+    @*<div class="row">
+            <div class="col">
+                <input type="text" name="Loan_Payment_Frequency" id="Loan_Payment_Frequency" class="form-control" placeholder="Loan_Payment_Frequency">
+            </div>
+            <div class="col">
+                <input type="text" name="Loan_Payment_Method" id="Loan_Payment_Method" class="form-control" placeholder="Loan_Payment_Method">
+            </div>
+            <div class="col">
+                <input type="text" name="Marital_Status" id="Marital_Status" class="form-control" placeholder="Marital_Status">
+            </div>
+        </div>*@
+    <div class="row">
+        <div class="col">
+            <select name="Existing_Customer_Flag" id="Existing_Customer_Flag" class="form-control" required>
+                <option value="" disabled selected>Existing_Customer_Flag</option>
+                <option value="Y">Y</option>
+                <option value="N">N</option>
+            </select>
+            @*<input type="text" name="Existing_Customer_Flag" id="Existing_Customer_Flag" class="form-control" placeholder="Existing_Customer_Flag" required>*@
+        </div>
+        <div class="col">
+            <input type="text" name="Number_of_Dependants" id="Number_of_Dependants" class="form-control" placeholder="Number_of_Dependants" required>
+        </div>
+        @*<div class="col">
+                <input type="text" name="Number_of_Payments" id="Number_of_Payments" class="form-control" placeholder="Number_of_Payments">
+            </div>*@
+        <div class="col">
+            <select name="Occupation_Code" id="Occupation_Code" class="form-control" required>
+                <option value="" disabled selected>Occupation_Code</option>
+                <option value="M">M</option>
+                <option value="B">B</option>
+                <option value="P">P</option>
+                <option value="O">O</option>
+            </select>
+            @*<input type="text" name="Occupation_Code" id="Occupation_Code" class="form-control" placeholder="Occupation_Code" required>*@
+        </div>
+    </div>
+    <!--<div class="row">-->
+    @*<div class="col">
+            <input type="text" name="Promotion_Type" id="Promotion_Type" class="form-control" placeholder="Promotion_Type">
+        </div>*@
+
+    @*<div class="col">
+            <input type="text" name="Time_at_Address" id="Time_at_Address" class="form-control" placeholder="Time_at_Address">
+        </div>*@
+    <!--</div>-->
+    <div class="row">
+        <div class="col">
+            <select name="Residential_Status" id="Residential_Status" class="form-control" required>
+                <option value="" disabled selected>Residential_Status</option>
+                <option value="H">H</option>
+                <option value="L">L</option>
+                <option value="T">T</option>
+                <option value="O">O</option>
+            </select>
+            @*<input type="text" name="Residential_Status" id="Residential_Status" class="form-control" placeholder="Residential_Status" required>*@
+        </div>
+        <div class="col">
+            <input type="text" name="Time_in_Employment" id="Time_in_Employment" class="form-control" placeholder="Time_in_Employment" required>
+        </div>
+        <div class="col">
+            <input type="text" name="Bureau_Score" id="Bureau_Score" class="form-control" placeholder="Bureau_Score" required>
+        </div>
+
+        @*<div class="col">
+                <input type="text" name="Time_with_Bank" id="Time_with_Bank" class="form-control" placeholder="Time_with_Bank">
+            </div>
+            <div class="col">
+                <input type="text" name="Weight_Factor" id="Weight_Factor" class="form-control" placeholder="Weight_Factor">
+            </div>*@
+    </div>
+    @*<div class="row">
+            <div class="col">
+                <input type="text" name="GB_Flag" id="GB_Flag" class="form-control" placeholder="GB_Flag">
+            </div>
+            <div class="col">
+                <input type="text" name="Age_of_Applicant" id="Age_of_Applicant" class="form-control" placeholder="Age_of_Applicant">
+            </div>
+            <div class="col">
+                <input type="text" name="Application_Month" id="Application_Month" class="form-control" placeholder="Application_Month">
+            </div>
+        </div>*@
+    <div class="row">
+
+        <div class="col">
+            <input type="text" name="SP_ER_Reference" id="SP_ER_Reference" class="form-control" placeholder="SP_ER_Reference" required>
+        </div>
+        <div class="col">
+            <input type="text" name="SP_Number_Of_Searches_L6M" id="SP_Number_Of_Searches_L6M" class="form-control" placeholder="SP_Number_Of_Searches_L6M" required>
+        </div>
+        <div class="col">
+            <input type="text" name="SP_Number_of_CCJs" id="SP_Number_of_CCJs" class="form-control" placeholder="SP_Number_of_CCJs" required>
+        </div>
+    </div>
+    <!--<div class="row">-->
+    @*<div class="col">
+            <input type="text" name="loan_to_income" id="loan_to_income" class="form-control" placeholder="loan_to_income">
+        </div>
+        <div class="col">
+            <input type="text" name="split" id="split" class="form-control" placeholder="split">
+        </div>*@
+    <!--</div>-->
+
+    <div class="row">
+        <div class="col">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+
+</form>

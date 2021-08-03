@@ -1,0 +1,126 @@
+﻿body {
+    background-image: url("../images/3.jpg");
+    background-size: 100%;
+    /*background-position: center center;*/
+}
+
+.container1 {
+    background-image: url("../images/3.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.container1 li {
+    position: relative;
+    left: 90px;
+    margin-top: -50px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.navbar-brand {
+    position: relative;
+    top: 2px;
+    left: 5px;
+    font-size: 30px;
+    color: rgba(218,112,214,0.85) !important
+}
+
+a.hoverable {
+    color: #7B68EE !important;
+    font-weight: 500;
+}
+
+a.hoverable:hover {
+    color: #7B68EE !important;
+    box-shadow: 0px -3px 19px 12px rgba(218,112,214,0.85) !important;
+}
+
+button.text-dark {
+    color: black !important;
+    margin-left: 850px;
+    margin-top: 2px;
+}
+
+
+
+#login {
+    color: black !important;
+    margin-left: 1050px;
+    margin-top: 0px;
+}
+
+h1, h2 {
+    color: #7B68EE;
+    font-weight:400 !important;
+}
+
+.danger {
+    color: red;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+
+.lbl {
+    color: white;
+    height: 100px;
+    width: 300px;
+    background-color: #7B68EE;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5%;
+    font-style: oblique; 
+}
+
+.upload {
+    margin-top: 32px;
+
+}
+
+.form-inline {
+    background-color:transparent;
+}
+
+div.image img {
+    position: absolute;
+    margin-top: 20px;
+    left: 30px;
+    border-radius: -15%;
+    border: medium;
+    box-shadow: 0px 0px 50px 5px #7B68EE;
+}
+div.image2 img {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 570px;
+    border-radius: -15%;
+    border: medium;
+    box-shadow: 0px 0px 50px 20px rgba(218,112,214,0.85);
+}
+.text {
+    margin-top: 330px;
+    position: absolute;
+    left: 220px;
+    text-align: center;
+    color: #000080;
+}
+.text2 {
+    margin-top: 330px;
+    position: absolute;
+    left: 940px;
+    text-align: center;
+    color: #000080;
+}
+.center {
+    position:absolute;
+    left:612px;
+    
+}
+
+#button {
+    position:absolute;
+    left:110px;
+}

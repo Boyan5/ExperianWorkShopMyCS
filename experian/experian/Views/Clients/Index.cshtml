@@ -1,0 +1,32 @@
+﻿@{ ViewData["Title"] = " Upload Page"; }
+
+<div class="text-center">
+    <h1 class="display-4">Upload Your csv Here</h1>
+</div>
+
+@{ Layout = "_Layout"; }
+<br />
+<br />
+<br />
+<br />
+
+<form asp-controller="Clients" asp-action="Index" method="post" enctype="multipart/form-data">
+    <div class="center">
+        <input type="file" name="file" id="file" value="" />
+        <label for="file" class="lbl">
+            <div class="upload">
+                Browse...
+                <span class="material-icons">
+                    file_upload
+                </span>
+            </div>
+        </label>
+        <hr />
+        <button type="submit" style="background-color: rgba(218,112,214,0.85); width: 80px; height: 60px; border-radius: 15%; color: white; font:oblique; border:none" id="button"> Upload </button>
+    </div>
+</form>
+
+
+
+
+
